@@ -16,18 +16,10 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.container {
+  @apply w-full lg:max-w-[1440px] xl:max-w-[1920px] mx-auto;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+main {
+  @apply my-[50px] mx-6 md:mx-12 lg:mx-[120px];
 }
